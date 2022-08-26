@@ -1,21 +1,21 @@
 // ==UserScript==
 // @name         Feedbin Font
 // @namespace    http://tampermonkey.net/
-// @version      0.1
-// @description  try to take over the world!
-// @author       You
+// @version      0.9
+// @description  pleasant typography for Feedbin
+// @author       John M. Leen
 // @match        https://feedbin.com/
 // @grant        GM_addStyle
 // ==/UserScript==
 
 (function() {
     'use strict';
+    // Hyphenation requires a language declaration.
     document.getElementsByTagName('html')[0].setAttribute('lang', 'en');
-
 
     GM_addStyle(`
         body {
-            font-family: 'DG Pro 42';
+            font-family: 'DG Pro 42';  // Or bring your favorite.
         }
 
         .entry-inner p {
